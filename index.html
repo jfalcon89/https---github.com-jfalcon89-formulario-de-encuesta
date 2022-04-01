@@ -10,10 +10,89 @@
 </head>
 
 <body>
-    <h1>
-        hola mundooo !!
-    </h1>
-    <p>prueba git</p>
+
+    <container id="container">
+
+        <div id="container-titulo-description">
+            <h1 id="titulo">Formulario de encuenta</h1>
+            <p id="description">Favor completar debidamente el formulario</p>
+        </div>
+
+        <form id="survey-form">
+            <div class="container-form">
+                <label id="nombre-label" for="name">NOMBRE</label>
+                <input type="text" name="name" id="name" class="container-form" placeholder="Escriba su nombre aqui" required>
+            </div>
+
+            <div class="container-form">
+                <label id="email-label" for="email">EMAIL</label>
+                <input type="email" name="email" id="email" class="container-form" placeholder="Escriba su Email aqui" required>
+            </div>
+            <div class="container-form">
+                <label id="numero-label" for="edad">EDAD (opcional)</label>
+                <input type="number" name="edad" id="number" class="container-form" placeholder="Escriba su edad aqui" required min="12" max="99">
+            </div>
+            <div class="container-form">
+                <label id="genero-label">GENERO</label>
+                <select name="genero" id="genero" class="container-form" required>
+                    <option disabled selected value="Seleccione su genero"></option> 
+                    <option>Masculino</option>
+                    <option>Femenina</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <label id="check-label" required>SELECCIONE SU NIVEL COMO PROGRAMADOR</label>
+            </div>
+            <div class="container-form">
+                <input type="radio" id="check-input" name="opciones-1" value="checkValue">Nivel basico
+            </div>
+            <div class="container-form">
+                <input type="radio" id="check-input" name="opciones-1" value="checkValue">Nivel intermedio
+            </div>
+            <div class="container-form">
+                <input type="radio" id="check-input" name="opciones-1" value="checkValue">Nivel avanzado
+            </div><br>
+
+
+            <div class="container-form">
+                <label id="check-label-2" required>QUE TECNOLOGIAS DOMINAS</label>
+            </div>
+            <div class="container-form">
+                <label id="check-label-2"></label>
+                <input type="checkbox" name="opciones-2" value="checkValue" unchecked>HTML
+            </div>
+            <div class="container-form">
+                <label id="check-label-2"></label>
+                <input type="checkbox" name="opciones-2" value="checkValue" unchecked>CSS
+            </div>
+            <div class="container-form">
+                <label id="check-label-2"></label>
+                <input type="checkbox" name="opciones-2" value="checkValue" unchecked>JAVASCRITP
+            </div>
+            <div class="container-form">
+                <label id="check-label-2"></label>
+                <input type="checkbox" name="opciones-2" value="checkValue" unchecked>OTRAS TECNOLOGIAS
+            </div><br>
+
+
+            <div class="container-form">
+                <label for="">¿Algún comentario o sugerencia?</label>
+                <textarea class="textarea" rows="5" placeholder="Escriba su comentario aqui"></textarea>
+            </div>
+
+
+            <div id="buttom">
+                <button type="submit" class="btn" id="submit">Submit</button>
+            </div>
+
+
+        </form>
+
+
+    </container>
+
 </body>
 
 </html>
